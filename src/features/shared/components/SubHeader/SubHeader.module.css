@@ -1,0 +1,13 @@
+.sub-header {
+  margin-top: 0.6rem;
+}
+
+.title {
+  font-weight: bold;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+.content {
+  padding: 1rem 1rem 1rem 0
+}

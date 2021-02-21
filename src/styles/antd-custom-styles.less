@@ -1,0 +1,136 @@
+/* Override Button Styles */
+button {
+  /* Default Button */
+  &.ant-btn {
+    background: var(--raven);
+
+    &:hover {
+      color: var(--white);
+      background: var(--steel-gray);
+      border-color: var(--steel-gray);
+    }
+
+    &:active,
+    &:focus {
+      color: var(--white);
+      border-color: var(--raven);
+    }
+  }
+
+  /* Primary Button */
+  &.ant-btn.ant-btn-primary {
+    background: var(--kelly-green);
+
+    &:hover {
+      color: var(--white);
+      background: var(--green);
+      border-color: var(--green);
+    }
+
+    &:active,
+    &:focus {
+      color: var(--white);
+      border-color: var(--kelly-green);
+    }
+  }
+
+  /* Custom Actions Button */
+  &.ant-btn.ant-btn-actions {
+    background-color: var(--white);
+    border-color: var(--pale-slate);
+    color: var(--cg-blue);
+
+    &:hover {
+      color: var(--white);
+      background-color: var(--cg-blue);
+      transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    }
+  }
+}
+
+/* Override Anchor Styles */
+a {
+  &.komet-link {
+    color: var(--cg-blue);
+    text-decoration: underline;
+  }
+
+  &.muted {
+    color: var(--steel-gray);
+    text-decoration: none;
+  }
+
+  &.komet-link:hover,
+  &.muted:hover {
+    color: var(--cg-blue);
+    text-decoration: none;
+  }
+}
+
+a {
+  font-size: 12px;
+
+  &.komet-submenu-link {
+    color: var(--light-blue);
+    text-decoration: underline;
+  }
+
+  &.muted {
+    color: var(--dark-blue);
+    text-decoration: underline;
+  }
+
+  &.komet-submenu-link:hover,
+  &.muted:hover {
+    color: var(--cg-blue);
+    text-decoration: none;
+  }
+}
+
+/* Override Table styles */
+table {
+  thead.ant-table-thead th {
+    color: var(--white);
+    background-color: var(--cg-blue) !important;
+  }
+}
+
+.ant-table.ant-table-small {
+  font-size: 12px !important;
+}
+
+.ant-layout-header {
+  display: none !important;
+}
+
+.ant-descriptions-view {
+  // background: #ffe3ac;
+  padding: 5px;
+  padding-top: 10px;
+  border-radius: 0px;
+  ///border: 1px solid gray;
+}
+
+.ant-descriptions-item-label {
+  color: #000000;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.15;
+  text-align: start;
+}
+
+.ant-descriptions-item-content {
+  display: table-cell;
+  flex: 1 1;
+  color: #01101bfa;
+  font-size: 13px;
+  line-height: 1.15;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.ant-tabs > .ant-tabs-nav .ant-tabs-nav-wrap,
+.ant-tabs > div > .ant-tabs-nav .ant-tabs-nav-wrap {
+  padding: 3px 10px !important;
+  border-top: 1px solid #e4e4e4 !important;
+}

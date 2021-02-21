@@ -1,0 +1,93 @@
+import { Table, Space } from "antd";
+import {
+  CheckCircleTwoTone,
+  EditOutlined,
+  DeleteOutlined,
+  UserOutlined,
+  VideoCameraOutlined,
+  WechatOutlined,
+} from "@ant-design/icons";
+import { withRouter } from "react-router-dom";
+import BaseTable from "../../shared/components/BasicTable";
+import ActionUserTable from "./ActionsUsersTable";
+
+const UsersTable = ({
+  selectedUser,
+  setSelectedUser,
+  setPage,
+  history,
+  users,
+  refetch,
+  initialValues,
+  handleDetails,
+  handleEdit,
+  userId,
+  handleArchived,
+  t,
+  handleInactive,
+  ...restProps
+}) => (
+  <>
+    <BaseTable {...restProps} dataSource={users} refetch={refetch}>
+      <Table.Column
+        width="5%"
+        title={t("actions")}
+        dataIndex="actions"
+        key="actions"
+        render={(_, data) => (
+          <div className="actions-column">
+            <Space size="small">
+              <a href="#!" onClick={() => handleArchived(data)} role="button" tabIndex={0}>
+                <DeleteOutlined />
+              </a>
+              <a href="#!" onClick={() => handleInactive(data)} role="button" tabIndex={0}>
+                {data.state === 1 ? (
+                  <CheckCircleTwoTone twoToneColor="#FF0A50" />
+                ) : (
+                  <CheckCircleTwoTone twoToneColor="#52c41a" />
+                )}
+              </a>
+            </Space>
+          </div>
+        )}
+      />
+      <Table.Column
+        title="Avatar"
+        dataIndex="avatar"
+        key="avatar"
+        sorter
+        render={(value) => <img width="40px" alt="" src={value} />}
+      />
+      <Table.Column title="Username" dataIndex="username" key="username" sorter />
+      <Table.Column title="Title" dataIndex="title" key="title" sorter responsive={["lg"]} />
+      <Table.Column
+        title="State"
+        dataIndex="state"
+        key="state"
+        sorter
+        render={(value) => {
+          if (value === "0") {
+            return "Inactive";
+          }
+          if (value === "1") {
+            return "Waiting";
+          }
+          if (value === "2") {
+            return "in Use";
+          }
+        }}
+      />
+      <Table.Column title="People" dataIndex="people" key="people" sorter responsive={["lg"]} />
+      <Table.Column
+        title="Zoom / Chat"
+        dataIndex="mode"
+        key="mode"
+        sorter
+        responsive={["lg"]}
+        render={(value) => (value === "zoom" ? "Zoom Video" : "Chat")}
+      />
+    </BaseTable>
+  </>
+);
+
+export default withRouter(UsersTable);

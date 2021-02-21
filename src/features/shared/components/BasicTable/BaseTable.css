@@ -1,0 +1,34 @@
+.row-table .actions-column {
+  display: none;
+  position: absolute;
+  top: 5px;
+}
+
+.row-table:hover .actions-column {
+  display: inline;
+}
+
+.ant-table-container table > thead > tr:first-child th:first-child {
+  border-top-left-radius: 0px;
+}
+.ant-table-container table > thead > tr:first-child th:last-child {
+  border-top-right-radius: 0px;
+}
+
+.no-results {
+  height: 50px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #ffebeb;
+  text-align: center;
+  padding-top: 2px;
+}
+
+.no-results .content {
+  margin: 15px 24px;
+  font-size: 16px !important;
+  font-weight: 200;
+}

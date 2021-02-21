@@ -1,0 +1,30 @@
+.action-bar {
+  border: 1px solid #dbdbdc;
+  background: #e6e6e6;
+  max-width: 100%;
+}
+
+.action-bar-filters {
+  min-height: 50px;
+  background: #e6e6e6;
+  max-width: 100%;
+}
+
+.action-bar-content {
+  min-height: 103px;
+  border: 1px solid #cccccc;
+  border-radius: 5px 5px 0 0;
+  background-color: #f6f6f6;
+  width: 100%;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.action-bar-close-close-button {
+  color: #ccc;
+  top: 15px;
+  font-size: 22px;
+  position: absolute;
+  right: 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,202 @@
+.ant-modal-header {
+  background: var(--light-blue);
+}
+
+.ant-modal-alert .ant-modal-header {
+  background: var(--light-orange);
+}
+
+.ant-modal-title {
+  color: var(--white);
+}
+
+.ant-modal-body .form-title {
+  padding-bottom: 7px;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.ant-modal-body {
+  padding-top: 7px !important;
+}
+
+.ant-modal-body .select-form-modal {
+  width: 100%;
+}
+
+.ant-modal-body .input-form-modal-small {
+  width: 60px;
+}
+
+.ant-modal-body .lbl-example {
+  padding: 4px 12px;
+  border: 1px solid var(--black);
+}
+
+.ant-modal-body a {
+  font-size: 11px;
+}
+
+.ant-modal .arrow-navigation-message {
+  font-size: 12px;
+  color: var(--raven);
+  padding-top: 10px;
+  text-align: right;
+  float: right;
+}
+
+.manage-modal .ant-form-item {
+  margin-bottom: 10px;
+}
+
+.manage-modal .infoFormItem {
+  display: none !important;
+}
+
+.manage-modal .ant-select-selector {
+  width: 100%;
+}
+
+.manage-modal .ant-select-selection-item-content {
+  font-size: 10px;
+}
+
+.manage-modal .layout-form-modal {
+  height: 500px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-user {
+  height: 430px;
+  padding: 15px;
+}
+
+.manage-modal .layout-form-modal.entity-pack {
+  height: 310px;
+  padding: 15px;
+}
+
+.ant-modal-body {
+  padding-top: 7px !important;
+  overflow: scroll !important;
+}
+
+.manage-modal .layout-form-modal.entity-plan {
+  height: 310px;
+  padding: 15px;
+}
+
+.manage-modal .layout-form-modal.entity-assist {
+  height: 200px;
+  padding: 15px;
+}
+
+.manage-modal .layout-form-modal.entity-master {
+  height: 200px;
+  padding: 15px;
+}
+
+.manage-modal .ant-spin.ant-spin-show-text {
+  margin: auto;
+  display: block;
+  align-items: center;
+  padding-top: 20%;
+}
+
+.manage-modal .layout-form-modal {
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.manage-modal .wrapper-form-modal {
+  padding-right: 30px;
+}
+
+.manage-modal .ant-spin {
+  margin: auto;
+  display: block;
+  align-items: center;
+  padding-top: 15%;
+}
+
+.manage-modal .ant-spin.ant-spin-show-text .ant-spin-text {
+  display: block;
+  padding-top: 20px;
+  color: #2b2b2b;
+}
+
+.manage-modal .layout-form-modal.entity-user .ant-form-item-label > label {
+  height: 14px !important;
+}
+
+.manage-modal .layout-form-modal.entity-user .ant-form-item-label {
+  padding-bottom: 5px !important;
+}
+
+.manage-modal .layout-form-modal.entity-pack .ant-form-item-label > label {
+  height: 16px !important;
+}
+
+.manage-modal .layout-form-modal.entity-pack .ant-form-item-label {
+  padding-bottom: 7px !important;
+}
+
+.manage-modal .layout-form-modal.entity-plan .ant-form-item-label > label {
+  height: 16px !important;
+}
+
+.manage-modal .layout-form-modal.entity-plan .ant-form-item-label {
+  padding-bottom: 7px !important;
+}
+
+.manage-modal .layout-form-modal.entity-300 {
+  height: 300px;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-200 {
+  height: 200px;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-400 {
+  height: 400px;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-500 {
+  height: 500px;
+  padding: 15px;
+  overflow: scroll;
+}
+.manage-modal .layout-form-modal.entity-550 {
+  height: 550px;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-600 {
+  height: 600px;
+  padding: 15px;
+  overflow: scroll;
+}
+
+.manage-modal .layout-form-modal.entity-small .ant-form-item-label > label {
+  height: 16px !important;
+}
+
+.manage-modal .layout-form-modal.entity-small .ant-form-item-label {
+  padding-bottom: 7px !important;
+}
+
+.ant-modal-close {
+  color: rgb(250 250 250);
+}
+
+.ant-modal-close:hover {
+  color: rgb(250 250 250) !important;
+  transform: scale(1.3);
+}

@@ -1,0 +1,19 @@
+.text-align-right {
+  text-align: right;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.padding-xxs {
+  padding: 2px;
+}
+
+.padding-xs {
+  padding: 5px;
+}

@@ -1,0 +1,189 @@
+.cluuf-app {
+  padding-top: 0px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.ks-text-align-center {
+  text-align: center;
+}
+
+.ks-text-align-left {
+  text-align: left;
+}
+
+.ks-text-align-right {
+  text-align: right;
+}
+
+#components-layout-demo-responsive .logo {
+  height: 32px;
+  background: rgba(255, 255, 255, 0.2);
+  margin: 16px;
+}
+
+.site-layout-sub-header-background {
+  background: var(--white);
+}
+
+.site-layout-background {
+  background: var(--white);
+}
+
+.notification-alert-success .ant-message-notice-content {
+  background: var(--green);
+  color: var(--white);
+}
+
+.notification-alert-success .anticon {
+  color: var(--white) !important;
+}
+
+.spin-global {
+  padding: 40px;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+.ant-table-container .ant-select-selector {
+  height: 20px !important;
+}
+
+.ant-table-container .ant-select.ant-select-single {
+  font-size: 13px;
+}
+
+.ant-table-container .ant-select.ant-select-single .ant-select-selection-item {
+  line-height: 20px;
+}
+
+.ant-input[disabled],
+.ant-select-disabled.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+  color: var(--black) !important;
+}
+
+.calendar-screen {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.calendar-screen {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.rbc-calendar {
+  height: 100vh;
+}
+
+.ant-picker {
+  width: 100%;
+}
+
+.subcontainer-wrapper {
+  padding: 20px;
+}
+
+.bt {
+  border: none;
+}
+
+.bt-primary,
+.bt-primary:hover,
+.bt-primary:active {
+  background: var(--primary) !important;
+  color: var(--white) !important;
+}
+
+.ant-input-number {
+  width: 100% !important;
+}
+
+.logo h2 {
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  max-width: 100px;
+  margin: auto;
+  border: 2px solid #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.ql-editor {
+  height: 250px !important;
+}
+
+.ql-editor-wrapper-100 .ql-editor {
+  height: 100px !important;
+}
+
+.ql-editor-wrapper-150 .ql-editor {
+  height: 150px !important;
+}
+
+.ql-editor-wrapper-250 .ql-editor {
+  height: 250px !important;
+}
+
+.ql-editor-wrapper-350 .ql-editor {
+  height: 350px !important;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-left::before {
+  top: 50%;
+  width: 1% !important;
+}
+
+.primaryOption {
+  color: green !important;
+  background-color: hsl(75, 81%, 75%);
+  padding: 7px 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.secondaryOption {
+  background-color: rgb(124, 0, 128) !important;
+  color: hsl(75, 81%, 75%);
+  padding: 7px 3px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.textGreen {
+  color: green !important;
+}
+
+.iconGreen {
+  font-size: 20px;
+  color: green !important;
+}
+
+.iconRed {
+  font-size: 20px;
+  color: red !important;
+}
+
+.ant-statistic.size100 {
+  margin-right: 80px;
+}
+
+.ant-statistic.size100 .ant-statistic-content {
+  width: 150px !important;
+}
+
+.ant-statistic-content {
+  font-size: 20px !important;
+}
+
+.checked-box {
+  padding: 4px 10px;
+  border-radius: 5px;
+  background: #ececec;
+  margin-bottom: 10px;
+}

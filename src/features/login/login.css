@@ -1,0 +1,9 @@
+.containerLogin {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+    background-color: #000;
+    min-height: 700px;
+  }
