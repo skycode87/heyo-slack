@@ -44,7 +44,7 @@ const Head = ({ menu, setMenu, role }) => {
                           </a>
                         </small>
                         <small>
-                          <a href="login/goldgym">Close</a>
+                          <a href="login/heyo">Sign out</a>
                         </small>
                       </Space>
                     </p>

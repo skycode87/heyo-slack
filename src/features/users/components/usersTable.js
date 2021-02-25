@@ -1,15 +1,8 @@
 import { Table, Space } from "antd";
-import {
-  CheckCircleTwoTone,
-  EditOutlined,
-  DeleteOutlined,
-  UserOutlined,
-  VideoCameraOutlined,
-  WechatOutlined,
-} from "@ant-design/icons";
+import { CheckCircleTwoTone, DeleteOutlined } from "@ant-design/icons";
 import { withRouter } from "react-router-dom";
 import BaseTable from "../../shared/components/BasicTable";
-import ActionUserTable from "./ActionsUsersTable";
+import { dateFormat } from "../../../constants/globals";
 
 const UsersTable = ({
   selectedUser,
@@ -70,14 +63,29 @@ const UsersTable = ({
             return "Inactive";
           }
           if (value === "1") {
-            return "Waiting";
+            return "in Waiting";
           }
           if (value === "2") {
-            return "in Use";
+            return "Connected";
           }
         }}
       />
-      <Table.Column title="People" dataIndex="people" key="people" sorter responsive={["lg"]} />
+      <Table.Column
+        title="Next Connection"
+        dataIndex="datelimit"
+        key="datelimit"
+        sorter
+        responsive={["lg"]}
+        render={(value) => dateFormat(value)}
+      />
+      <Table.Column
+        title="Connections"
+        dataIndex="people"
+        key="people"
+        sorter
+        responsive={["lg"]}
+        render={(value, row) => `${row.people - row.connections}/${row.people}`}
+      />
       <Table.Column
         title="Zoom / Chat"
         dataIndex="mode"

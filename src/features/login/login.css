@@ -1,9 +1,13 @@
 .containerLogin {
-    display: flex;
-    flex-flow: column wrap;
-    align-content: center;
-    justify-content: center;
-    align-self: center;
-    background-color: #000;
-    min-height: 700px;
-  }
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  justify-content: center;
+  align-self: center;
+  background-color: #4a9da3;
+  min-height: 700px;
+}
+
+body {
+  background-color: #3e0a3a !important;
+}
