@@ -56,7 +56,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build && yarn copy-dist",
+    "build": "craco build",
     "test": "craco test",
     "copy-dist": "node copy-dist-folder.js",
     "storybook": "start-storybook -p 6006 -s public",
