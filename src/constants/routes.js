@@ -58,6 +58,12 @@ export const apiRoutes = Object.freeze({
     VALIDATE: `${backendPath}/userValidate`,
     ALL: `${backendPath}/userAll`,
   },
+  CONVERSATION: {
+    LOAD_GRID: `${backendPath}/conversationLoadGrid`,
+  },
+  MESSAGES: {
+    LOAD_GRID: `${backendPath}/messageLoadGrid`,
+  },
   PROFILE: {
     GET_DATA: `${backendPath}/profile`,
     SAVE_DATA: `${backendPath}/profile`,

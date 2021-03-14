@@ -14,7 +14,7 @@ import PlansCalendarContainer from "../features/plans/containers/PlansCalendar";
 import InstanceContainer from "../features/instance/containers/Instance";
 import ProfileContainer from "../features/profile/containers/Profile";
 import BucketContainer from "../features/bucket/containers/Buckets";
-
+import ConversationContainer from "../features/conversation/containers/Conversations";
 import UsersContainer from "../features/users/containers/Users";
 import UserPortalContainer from "../features/users/containers/UserPortal";
 
@@ -68,7 +68,7 @@ const Home = () => {
             <div className="site-layout-background" style={{ padding: 10, minHeight: 800 }}>
               {menu === 1 && <UserContainer />}
               {menu === 2 && <UsersContainer />}
-              {menu === 3 && <MasterContainer />}
+              {menu === 3 && <ConversationContainer />}
               {menu === 4 && <PackContainer />}
               {menu === 5 && <PlanContainer />}
               {menu === 6 && <AppContainer />}

@@ -2,14 +2,14 @@ import { Table, Space } from "antd";
 import { CheckCircleTwoTone, DeleteOutlined } from "@ant-design/icons";
 import { withRouter } from "react-router-dom";
 import BaseTable from "../../shared/components/BasicTable";
-import { dateFormat } from "../../../constants/globals";
+import { dateFormat2 } from "../../../constants/globals";
 
-const UsersTable = ({
-  selectedUser,
-  setSelectedUser,
+const ConversationsTable = ({
+  selectedConversation,
+  setSelectedConversation,
   setPage,
   history,
-  users,
+  conversations,
   refetch,
   initialValues,
   handleDetails,
@@ -18,13 +18,14 @@ const UsersTable = ({
   handleArchived,
   t,
   handleInactive,
+  details,
   ...restProps
 }) => (
   <>
-    <BaseTable {...restProps} dataSource={users} refetch={refetch}>
+    <BaseTable {...restProps} details={details} dataSource={conversations} refetch={refetch}>
       <Table.Column
         width="5%"
-        title={t("actions")}
+        title="Actions"
         dataIndex="actions"
         key="actions"
         render={(_, data) => (
@@ -44,50 +45,43 @@ const UsersTable = ({
           </div>
         )}
       />
+
       <Table.Column
-        title="Avatar"
-        dataIndex="avatar"
-        key="avatar"
-        sorter
-        render={(value) => <img width="40px" alt="" src={value} />}
-      />
-      <Table.Column title="Username" dataIndex="username" key="username" sorter />
-      <Table.Column title="Title" dataIndex="title" key="title" sorter responsive={["lg"]} />
-      <Table.Column
-        title="State"
-        dataIndex="state"
-        key="state"
-        sorter
-        render={(value) => {
-          if (value === "0") {
-            return "Inactive";
-          }
-          if (value === "1") {
-            return "in Waiting";
-          }
-          if (value === "2") {
-            return "Connected";
-          }
-        }}
-      />
-      <Table.Column
-        title="Last Connection"
-        dataIndex="datelimit"
-        key="datelimit"
+        title="User A"
+        dataIndex="usera"
+        key="usera"
         sorter
         responsive={["lg"]}
-        render={(value) => dateFormat(value)}
+        render={(value) => (
+          <small>
+            <img width="40px" alt="" src={value.avatar} />
+            {value.username}
+          </small>
+        )}
       />
-      <Table.Column title="Connections to have" dataIndex="people" key="people" sorter responsive={["lg"]} />
       <Table.Column
-        title="Remaining Connections"
-        dataIndex="connections"
-        key="connections"
+        title="User B"
+        dataIndex="userb"
+        key="userb"
         sorter
         responsive={["lg"]}
+        render={(value) => (
+          <small>
+            <img width="40px" alt="" src={value.avatar} />
+            {value.username}
+          </small>
+        )}
+      />
+      <Table.Column
+        title="Created At"
+        dataIndex="created"
+        key="created"
+        sorter
+        responsive={["lg"]}
+        render={(value) => dateFormat2(value)}
       />
     </BaseTable>
   </>
 );
 
-export default withRouter(UsersTable);
+export default withRouter(ConversationsTable);

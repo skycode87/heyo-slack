@@ -15,6 +15,10 @@
   border-top-right-radius: 0px;
 }
 
+.ant-table-content img {
+  border-radius: 50px;
+}
+
 .no-results {
   height: 50px;
   max-width: 100%;

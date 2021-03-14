@@ -60,6 +60,9 @@ const Head = ({ menu, setMenu, role }) => {
           <Menu.Item onClick={() => setMenu(2)} key="2" icon={<TeamOutlined />}>
             Users
           </Menu.Item>
+          <Menu.Item onClick={() => setMenu(3)} key="3" icon={<TeamOutlined />}>
+            Conversations
+          </Menu.Item>
           {/* <Menu.Item onClick={() => setMenu(11)} key="11" icon={<UserOutlined />}>
             Profile
       </Menu.Item>  */}

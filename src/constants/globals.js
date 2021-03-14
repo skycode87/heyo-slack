@@ -32,6 +32,8 @@ export const priceFormat = (text) => `$ ${text}`.replace(/\B(?=(\d{3})+(?!\d))/g
 
 export const dateFormat = (date) => moment(date).format("L");
 
+export const dateFormat2 = (date) => moment(date).format("LLLL");
+
 export const isFutureDate = (date) => {
   if (moment(date).format("YYYY/MM/DD") >= moment().format("YYYY/MM/DD")) {
     return true;
