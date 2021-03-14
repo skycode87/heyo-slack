@@ -78,13 +78,20 @@ const UsersTable = ({
         responsive={["lg"]}
         render={(value) => dateFormat(value)}
       />
-      <Table.Column title="Connections to have" dataIndex="people" key="people" sorter responsive={["lg"]} />
+      <Table.Column
+        title="Preferred number of connections per week"
+        dataIndex="people"
+        key="people"
+        sorter
+        responsive={["lg"]}
+      />
       <Table.Column
         title="Remaining Connections"
         dataIndex="connections"
         key="connections"
         sorter
         responsive={["lg"]}
+        render={(value, row) => row.people - row.connections}
       />
     </BaseTable>
   </>
