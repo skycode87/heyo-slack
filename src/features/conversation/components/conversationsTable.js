@@ -22,7 +22,20 @@ const ConversationsTable = ({
   ...restProps
 }) => (
   <>
-    <BaseTable {...restProps} details={details} dataSource={conversations} refetch={refetch}>
+    <BaseTable {...restProps} dataSource={conversations} refetch={refetch}>
+      <Table.Column
+        width="10%"
+        title={t("actions")}
+        dataIndex="actions"
+        key="actions"
+        render={(_, data) => (
+          <Space size="small">
+            <a href="#!" onClick={() => details(data)} role="button" tabIndex={0}>
+              More Info
+            </a>
+          </Space>
+        )}
+      />
       <Table.Column
         title="User A"
         dataIndex="usera"

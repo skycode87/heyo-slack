@@ -24,30 +24,13 @@ const MessageTable = ({
   const { messages, filters, setFilters, pagination, setPagination, loading, refetch } = useMessages();
 
   useEffect(() => {
-    if (conversationId.lenght > 0) {
-      setFilters({ ...filters, conversationId });
-      refetch();
-    }
+    console.log(conversationId);
+    setFilters({ ...filters, conversationId });
+    refetch();
   }, [reload]);
 
   return (
     <BaseTable {...restProps} dataSource={messages} refetch={refetch}>
-      <Table.Column
-        width="5%"
-        title={t("actions")}
-        dataIndex="actions"
-        key="actions"
-        render={(_, data) => (
-          <div className="actions-column">
-            <Space size="small">
-              <a href="#!" onClick={() => details(data)} role="button" tabIndex={0}>
-                More Info
-              </a>
-            </Space>
-          </div>
-        )}
-      />
-
       <Table.Column
         title="User"
         dataIndex="user"
