@@ -31,7 +31,7 @@ const MessageTable = ({
   }, [reload]);
 
   return (
-    <BaseTable {...restProps} details={details} dataSource={messages} refetch={refetch}>
+    <BaseTable {...restProps} dataSource={messages} refetch={refetch}>
       <Table.Column
         width="5%"
         title={t("actions")}
@@ -40,15 +40,8 @@ const MessageTable = ({
         render={(_, data) => (
           <div className="actions-column">
             <Space size="small">
-              <a href="#!" onClick={() => handleArchived(data)} role="button" tabIndex={0}>
-                <DeleteOutlined />
-              </a>
-              <a href="#!" onClick={() => handleInactive(data)} role="button" tabIndex={0}>
-                {data.state === 1 ? (
-                  <CheckCircleTwoTone twoToneColor="#FF0A50" />
-                ) : (
-                  <CheckCircleTwoTone twoToneColor="#52c41a" />
-                )}
+              <a href="#!" onClick={() => details(data)} role="button" tabIndex={0}>
+                More Info
               </a>
             </Space>
           </div>

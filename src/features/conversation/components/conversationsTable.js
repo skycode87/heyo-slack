@@ -24,29 +24,6 @@ const ConversationsTable = ({
   <>
     <BaseTable {...restProps} details={details} dataSource={conversations} refetch={refetch}>
       <Table.Column
-        width="5%"
-        title="Actions"
-        dataIndex="actions"
-        key="actions"
-        render={(_, data) => (
-          <div className="actions-column">
-            <Space size="small">
-              <a href="#!" onClick={() => handleArchived(data)} role="button" tabIndex={0}>
-                <DeleteOutlined />
-              </a>
-              <a href="#!" onClick={() => handleInactive(data)} role="button" tabIndex={0}>
-                {data.state === 1 ? (
-                  <CheckCircleTwoTone twoToneColor="#FF0A50" />
-                ) : (
-                  <CheckCircleTwoTone twoToneColor="#52c41a" />
-                )}
-              </a>
-            </Space>
-          </div>
-        )}
-      />
-
-      <Table.Column
         title="User A"
         dataIndex="usera"
         key="usera"
