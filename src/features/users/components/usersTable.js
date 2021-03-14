@@ -86,7 +86,7 @@ const UsersTable = ({
         responsive={["lg"]}
       />
       <Table.Column
-        title="Remaining Connections"
+        title="Number of connections this week"
         dataIndex="connections"
         key="connections"
         sorter
