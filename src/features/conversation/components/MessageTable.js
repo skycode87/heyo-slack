@@ -24,8 +24,10 @@ const MessageTable = ({
   const { messages, filters, setFilters, pagination, setPagination, loading, refetch } = useMessages();
 
   useEffect(() => {
-    setFilters({ ...filters, conversationId });
-    refetch();
+    if (conversationId.lenght > 0) {
+      setFilters({ ...filters, conversationId });
+      refetch();
+    }
   }, [reload]);
 
   return (
