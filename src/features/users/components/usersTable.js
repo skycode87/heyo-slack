@@ -24,7 +24,7 @@ const UsersTable = ({
     <BaseTable {...restProps} dataSource={users} refetch={refetch}>
       <Table.Column
         width="5%"
-        title={t("actions")}
+        title="actions"
         dataIndex="actions"
         key="actions"
         render={(_, data) => (
@@ -45,7 +45,7 @@ const UsersTable = ({
         )}
       />
       <Table.Column
-        title="Avatar"
+        title="Profile Picture"
         dataIndex="avatar"
         key="avatar"
         sorter

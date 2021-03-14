@@ -30,9 +30,9 @@ export const numbers = Object.freeze({
 
 export const priceFormat = (text) => `$ ${text}`.replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 
-export const dateFormat = (date) => moment(date).format("L");
+export const dateFormat = (date) => moment(date).format("MM/DD/YYYY");
 
-export const dateFormat2 = (date) => moment(date).format("L");
+export const dateFormat2 = (date) => moment(date).format("MM/DD/YYYY");
 
 export const isFutureDate = (date) => {
   if (moment(date).format("YYYY/MM/DD") >= moment().format("YYYY/MM/DD")) {
