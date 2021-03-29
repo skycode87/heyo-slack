@@ -23,9 +23,9 @@ const ConversationsTable = ({
 }) => (
   <>
     <BaseTable {...restProps} dataSource={conversations} refetch={refetch}>
-      <Table.Column
+      {/* <Table.Column
         width="10%"
-        title={t("actions")}
+        title="Actions"
         dataIndex="actions"
         key="actions"
         render={(_, data) => (
@@ -35,7 +35,7 @@ const ConversationsTable = ({
             </a>
           </Space>
         )}
-      />
+        /> */}
       <Table.Column
         title="User A"
         dataIndex="usera"
@@ -45,7 +45,7 @@ const ConversationsTable = ({
         render={(value) => (
           <small>
             <img width="40px" alt="" src={value.avatar} />
-            {value.username}
+            &nbsp; &nbsp; {value.username}
           </small>
         )}
       />
@@ -58,9 +58,25 @@ const ConversationsTable = ({
         render={(value) => (
           <small>
             <img width="40px" alt="" src={value.avatar} />
-            {value.username}
+            &nbsp; &nbsp; {value.username}
           </small>
         )}
+      />
+      <Table.Column
+        title="Interactions"
+        dataIndex="interactions"
+        key="interactions"
+        sorter
+        responsive={["lg"]}
+        render={(value) => <span className="interactions">{value}</span>}
+      />
+      <Table.Column
+        title="Last Interaction"
+        dataIndex="lastinteraction"
+        key="lastinteraction"
+        sorter
+        responsive={["lg"]}
+        render={(value) => dateFormat2(value)}
       />
       <Table.Column
         title="Created At"

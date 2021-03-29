@@ -38,13 +38,13 @@ const UsersTable = ({
         sorter
         render={(value) => {
           if (value === "0") {
-            return "Inactive";
+            return <span className="disconnected">Inactive</span>;
           }
           if (value === "1") {
-            return "in Waiting";
+            return <span className="waiting">In Waiting</span>;
           }
           if (value === "2") {
-            return "Connected";
+            return <span className="connected">Connected</span>;
           }
         }}
       />
@@ -62,6 +62,7 @@ const UsersTable = ({
         key="people"
         sorter
         responsive={["lg"]}
+        render={(value, row) => <span className="interactions">{row.people}</span>}
       />
       <Table.Column
         title="Number of connections this week"
@@ -69,7 +70,7 @@ const UsersTable = ({
         key="connections"
         sorter
         responsive={["lg"]}
-        render={(value, row) => row.people - row.connections}
+        render={(value, row) => <span className="interactions">{row.people - row.connections}</span>}
       />
     </BaseTable>
   </>

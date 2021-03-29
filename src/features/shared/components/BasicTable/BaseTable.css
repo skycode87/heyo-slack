@@ -16,7 +16,43 @@
 }
 
 .ant-table-content img {
-  border-radius: 50px;
+  border-radius: 5px;
+  border: 2px solid #47525d45;
+}
+
+.interactions {
+  color: #ff4d4f;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.connected {
+  color: #86bf3f;
+  border: 1px solid;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: #86bf3f0d;
+}
+
+.disconnected {
+  color: #ff4d4f;
+  border: 1px solid;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: #86bf3f0d;
+}
+
+.waiting {
+  color: #faad14;
+  border: 1px solid;
+  padding: 1px 2px;
+  border-radius: 3px;
+  background: #86bf3f0d;
+}
+
+.ant-table-tbody,
+.ant-table-thead {
+  font-size: 11px;
 }
 
 .no-results {
