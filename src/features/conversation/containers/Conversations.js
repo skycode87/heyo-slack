@@ -3,6 +3,8 @@ import { useTranslation } from "react-i18next";
 
 // COMPONENTS
 import ConversationsTable from "../components/conversationsTable";
+import ConversationsHeader from "../components/userHeader";
+
 import MessageTable from "../components/MessageTable";
 
 // HOOKS
@@ -81,6 +83,8 @@ const Conversations = () => {
     <>
       {reload === null && (
         <div>
+          <ConversationsHeader t={t} />
+
           <ConversationsTable
             {...commonProps}
             conversations={conversations}

@@ -3,7 +3,7 @@ import { PageHeader, Button } from "antd";
 const Header = ({ primaryAction, t }) => (
   <>
     <PageHeader
-      avatar={{ src: "http://assets.stickpng.com/images/5cb480cd5f1b6d3fbadece79.png" }}
+      avatar={{ src: "https://ca.slack-edge.com/T6LENHUDD-U01KT6PK1K8-a21137e6f692-512" }}
       className="site-page-header-responsive"
       title="Slack Users"
       extra={[primaryAction && primaryAction]}

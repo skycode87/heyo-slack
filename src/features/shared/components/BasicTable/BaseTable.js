@@ -50,9 +50,6 @@ const BaseTable = ({
           onChange={handleTableChange}
           style={{ cursor: "pointer" }}
           loading={loading}
-          onRow={(record, rowIndex) => ({
-            onDoubleClick: (event) => details(record), // double click row
-          })}
         >
           {children}
         </Table>

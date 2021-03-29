@@ -1,5 +1,4 @@
-import { Table, Space } from "antd";
-import { CheckCircleTwoTone, DeleteOutlined } from "@ant-design/icons";
+import { Table } from "antd";
 import { withRouter } from "react-router-dom";
 import BaseTable from "../../shared/components/BasicTable";
 import { dateFormat } from "../../../constants/globals";
