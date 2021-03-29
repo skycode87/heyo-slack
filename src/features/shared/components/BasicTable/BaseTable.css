@@ -21,9 +21,16 @@
 }
 
 .interactions {
-  color: #ff4d4f;
+  color: #8c5088;
   font-weight: bold;
   font-size: 20px;
+  padding: 2px;
+  border: 1px solid #e3dada;
+  border-radius: 5px;
+  margin: auto;
+  text-align: center;
+  display: block;
+  background: #04152905;
 }
 
 .connected {

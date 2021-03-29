@@ -64,7 +64,7 @@ const UsersTable = ({
         render={(value, row) => <span className="interactions">{row.people}</span>}
       />
       <Table.Column
-        title="Number of connections this week"
+        title="Number of connections"
         dataIndex="connections"
         key="connections"
         sorter
