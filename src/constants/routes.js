@@ -1,5 +1,5 @@
 const appPath = process.env.NODE_ENV === "development" ? process.env.REACT_APP_KOMET_PATH : process.env.PORT;
-const backendPath = process.env.NODE_ENV === "development" ? process.env.REACT_APP_BACKEND_PATH : process.env.PORT;
+const backendPath = "https://culture-builder.herokuapp.com";
 
 export const spaRoutes = Object.freeze({
   CATEGORIES: `${appPath}/spa/categories.do`,
