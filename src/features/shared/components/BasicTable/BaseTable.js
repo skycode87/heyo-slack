@@ -42,7 +42,7 @@ const BaseTable = ({
           pagination={{
             ...pagination,
             size: "small",
-            showTotal: (total, range) => `${range[0]} - ${range[1]} de ${total} registros`,
+            showTotal: (total, range) => `${range[0]} - ${range[1]} of ${total} rows`,
             position: ["bottomCenter"],
             showSizeChanger: false,
             pageSize: 100,
