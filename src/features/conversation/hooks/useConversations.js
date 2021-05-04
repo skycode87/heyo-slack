@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
 import { apiRoutes } from "../../../constants/routes";
 import useFetch from "../../shared/hooks/useFetch";
-import { getUserId } from "../../../utils/localStorage";
 
 const useConversations = () => {
   const [conversations, setConversations] = useState([]);
   const [filters, setFilters] = useState({
     user: "",
     channel: "",
-    sord: "asc",
-    sidx: "usera",
+    sord: "desc",
+    sidx: "created",
     // rootId: getUserId(),
   });
   const [pagination, setPagination] = useState({ current: 1, pageSize: 100, total: 0 });
