@@ -1,5 +1,4 @@
 const appPath = process.env.NODE_ENV === "development" ? process.env.REACT_APP_KOMET_PATH : process.env.PORT;
-// const backendPath = "https://culture-builder.herokuapp.com";
 const backendPath = "https://heyo-server-database.herokuapp.com";
 
 export const spaRoutes = Object.freeze({
