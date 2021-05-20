@@ -48,6 +48,21 @@ const UsersTable = ({
         }}
       />
       <Table.Column
+        title="Available today"
+        dataIndex="active"
+        key="active"
+        sorter
+        responsive={["lg"]}
+        render={(value) => {
+          if (value === false) {
+            return <span className="waiting">Yes</span>;
+          }
+          if (value === true) {
+            return <span className="disconnected">No</span>;
+          }
+        }}
+      />
+      <Table.Column
         title="Last Connection"
         dataIndex="datelimit"
         key="datelimit"
